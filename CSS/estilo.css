@@ -1,0 +1,146 @@
+body{
+display: flex;
+justify-content: center;
+align-items: center;
+min-height: 100vh;
+background: linear-gradient(0deg,#35373a 0%, #333b41 50%, rgb(109, 104, 104) 50%, rgb(109,104,104)100%);
+
+}
+    *{
+padding: 0;
+margin: 0;
+box-sizing:border-box;
+    
+}
+.Menu{
+    position: absolute;
+    top: 0%;
+    background: black;
+    height: auto;
+    width: 100%;
+} 
+.Menu a{
+float: right;
+display:block;
+color: white;
+text-align:center;
+padding: 14px 16px;
+text-decoration: none;
+font-size:20px;
+}
+.Menu a .face:hover{
+background-color:#2772c7;
+border-radius: 10%;
+ }
+ .Menu a .whats:hover{
+background-color:#3fca2c;
+border-radius: 10%;
+ }
+ .Menu a .insta:hover{
+background-color:#b3351f;
+border-radius: 10%;
+ }
+ 
+.container{
+width:100%;
+position:relative;
+display:flex;
+justify-content:center;
+flex-wrap: wrap;
+transform-style:preserve-3d;
+}
+
+.container .card{
+position: relative;
+width: 30%;
+height: 400px;
+background: rgb(22, 22, 22);
+margin: 0 10px;
+display: flex;
+justify-content: center;
+align-items: center;
+border-radius: 4px;
+box-shadow: 0 5px 15px rgb(110, 102, 102);
+transition: 0.5s;
+overflow:hidden;
+transform-style: preserve-3d;
+border-radius: 10%;
+}
+.container .card h2 {
+   
+width: 80px;
+height: 80px;
+line-height: 80px;
+font-size: 3em;
+background: #8ea4b6;
+color: #fff;
+text-align: center;
+border-radius: 50%;
+transition: box-shadow 0.5s;
+}
+.container .card:hover h2{
+background: #fff;
+box-shadow: 0 0 0 150px #ddd5d5;
+}
+.container .card h2 img{
+position: absolute;
+top:50%;
+left:50%;
+transform: translate(-50%,-50%);
+width: 350px;
+height: 300px;
+}
+
+.button{ 
+position:relative; 
+justify-content:center;
+}
+
+ input[type="submit"]{
+position: absolute;
+top: 155px;
+left: -55px;
+border: none;
+outline: none;
+color: #fff;
+font-size: 16px;
+background: #6787dd;
+height: 40px;
+cursor:pointer;
+border-radius:20px;
+}
+
+input[type="submit"]:hover{
+background: #2b2c2a;
+border:blue;
+width: 40px;
+}
+
+.footer {
+position: absolute;
+background-color:black;
+width: 100%;
+top:100%; 
+display:flex;
+justify-content:center;
+flex-wrap: wrap;
+transform-style:preserve-3d; 
+      }
+
+.footer  .card{
+position: relative;
+width: 30%;
+height: 100px;    
+margin: 0 10px;
+display: flex;
+justify-content: center;
+align-items: center;
+box-shadow: 0 5px 15px rgba(0,0,0,.1);
+transition: 0.5s;
+overflow:hidden;
+transform-style: preserve-3d;
+}
+.footer  .card h2{
+color:white;
+font-size:15px;
+}
